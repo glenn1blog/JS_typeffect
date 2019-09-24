@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 微軟正黑體;
+}
+
+body {
+    height: 100vh;
+    background-image: url(./mac.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#type {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 450px;
+    color: black;
+    font-size: 1.5em;
+}
+
+#type-box::after {
+    content: "";
+    display: inline-block;
+    background-color: black;
+    width: 3px;
+    height: 23px;
+    vertical-align: -3.3px;
+    margin-left: 7px;
+    animation: 0.7s infinite shine;
+}
+
+@keyframes shine {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
